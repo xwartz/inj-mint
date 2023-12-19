@@ -3,18 +3,15 @@
 import React, { useCallback, useRef, useState } from "react";
 import { getQueryClient } from "@sei-js/core"
 import { getNetworkInfo, Network } from "@injectivelabs/networks"
-
 import {
   MsgSend,
   PrivateKey,
   TxClient,
   TxGrpcClient,
-  // DEFAULT_STD_FEE,
   ChainRestAuthApi,
   createTransaction,
 } from "@injectivelabs/sdk-ts"
 import { BigNumberInBase } from "@injectivelabs/utils"
-// import { BigNumber } from "bignumber.js";
 
 const network = getNetworkInfo(Network.Mainnet)
 
@@ -22,7 +19,7 @@ const to = "inj15jy9vzmyy63ql9y6dvned2kdat2994x5f4ldu4"
 const memo =
   "ZGF0YToseyJwIjoiaW5qcmMtMjAiLCJvcCI6Im1pbnQiLCJ0aWNrIjoiSU5KUyIsImFtdCI6IjIwMDAifQ=="
 
-const rpcUrl = "https://rpc-injective.keplr.app"
+const rpcUrl = "https://1rpc.io/inj-lcd"
 
 const Minter: React.FC = () => {
   const [mnemonic, setMnemonic] = useState<string>("")
