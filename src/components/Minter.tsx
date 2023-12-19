@@ -19,7 +19,7 @@ const to = "inj15jy9vzmyy63ql9y6dvned2kdat2994x5f4ldu4"
 const memo =
   "ZGF0YToseyJwIjoiaW5qcmMtMjAiLCJvcCI6Im1pbnQiLCJ0aWNrIjoiSU5KUyIsImFtdCI6IjIwMDAifQ=="
 
-const rpcUrl = "https://1rpc.io/inj-lcd"
+const rpcUrl = "https://lcd-injective.cosmostation.io"
 
 const Minter: React.FC = () => {
   const [mnemonic, setMnemonic] = useState<string>("")
